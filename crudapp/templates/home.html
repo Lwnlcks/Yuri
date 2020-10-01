@@ -6,3 +6,11 @@
     <br><br>
     <input type="submit" value="count!" />
 </form>
+
+<br>
+
+{% for blog in blogs.all %}
+    <h1>{{ blog.title }}</h1>
+    <p>{{ blog.pub_date | date:"Y-m-d" }}</p>
+    <p>{{ blog.summary }}<a href="{% url 'detail' blog.id %}"> ...자세히 보기</a></p> 
+{% endfor %}
