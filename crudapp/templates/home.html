@@ -1,3 +1,8 @@
-<h1>hello world</h1>
+<h1>워드 카운트!</h1>
 
-<a href="{% url 'new' %}">new</a>
+<br><br>
+<form action="{% url 'new' %}">
+    <textarea cols="40" rows="10" name='fulltext'></textarea>
+    <br><br>
+    <input type="submit" value="count!" />
+</form>
