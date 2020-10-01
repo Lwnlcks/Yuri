@@ -5,4 +5,5 @@ import crudapp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', crudapp.views.home, name='home'),
+    path('new/', crudapp.views.new, name='new'),
 ]
